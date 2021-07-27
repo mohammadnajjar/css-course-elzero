@@ -1,0 +1,27 @@
+/* 
+  ! CSS Units
+  1- 5px
+  2- 1em => time width from father 
+  3- 1rem => time width from root from html 
+  ?  tag default font-size for web page = 16px
+  4- 50%
+  5- 1vw viewport width control width from width for screen
+  6- 1vh
+  7- vmin
+  - em : time of the parent element . the default = 16px
+  - vw : relative to the viewed width of the page
+  - rem : time of the root (HTML Element)
+  - percentage % : of the parent element
+*/
+
+
+
+body {
+  font-size: 40px;
+}
+div {
+  font-size: 5vw;
+}
+div span {
+  font-size: 2rem;
+}

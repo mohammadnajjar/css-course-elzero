@@ -1,0 +1,22 @@
+/* 
+  position :
+    ! 1- static => defult
+    ! 2- relative 
+    ! 3- absolute 
+    ! 4- fiexd 
+    ! 5- sticky 
+*/
+div {
+  color: white;
+  width: 100px;
+  padding: 10px;
+}
+.one {
+  background-color: red;
+  position: absolute;
+  top: 41px;
+  left: 40px;
+}
+.two {
+  background-color: green;
+}

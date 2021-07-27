@@ -1,0 +1,46 @@
+/*
+  Grid
+  Parent
+  - display: grid | inline-grid
+  - grid-template-columns: [Number Of Columns In] => [Px, %, Auto, Fraction, Repeat, Mix]
+  - grid-template-rows: [Number Of Rows In] => [Px, %, Auto, Fraction, Repeat, Mix]
+  - gap: [Row Gap] [Column Gap]
+  - justify-content
+  - align-content
+  - grid-template-areas
+  Child
+  - grid-column: [Grid-Column-Start] [Grid-Column-End]
+  - grid-row: [Grid-Row-Start] [Grid-Row-End]
+  https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout
+  https://css-tricks.com/snippets/css/complete-guide-grid/
+  https://learncssgrid.com/
+  https://cssgrid.io/
+  https://grid.layoutit.com/
+  https://gridbyexample.com/
+  https://grid.malven.co/
+  https://cssgridgarden.com/
+https://developer.mozilla.org/en-US/docs/Web/CSS/grid
+
+  */
+
+* {
+  box-sizing: border-box;
+}
+.parent {
+  margin: 20px auto;
+  width: 800px;
+  height: 500px;
+  background-color: #ddd;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: repeat(3, auto);
+  gap: 10px 10px;
+}
+.parent div {
+  background-color: red;
+  color: white;
+  padding: 20px;
+  font-size: 30px;
+  font-weight: bold;
+  text-align: center;
+}

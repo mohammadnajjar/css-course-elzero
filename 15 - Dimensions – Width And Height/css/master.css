@@ -1,0 +1,21 @@
+/* 
+  min-height
+  max-height
+  min-width
+  max-width
+  width : fit-content;
+  
+  ?  - The fit-content behaves as fit-content(stretch). In practice this means that the box will use the available space, but never more than max-content.
+  !!! must reeed
+  ! https://developer.mozilla.org/en-US/docs/Web/CSS/width
+  ! https://developer.mozilla.org/en-US/docs/Web/CSS/height
+
+  */
+
+div {
+  background-color: red;
+  padding: 10px;
+  display: inline-block;
+  max-width: 400px;
+  min-width: 50px;
+}

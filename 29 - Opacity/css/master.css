@@ -1,0 +1,13 @@
+/*
+  rgb(255 0 0 / 0.1) بتعمل شفافية بس للخلفية
+  opacity بتعمل شفافية للعنصر وكل شي جواته لكل المحتةى يعني
+  ex: bootstrap modle 
+*/
+
+.one {
+  background-color: red;
+  opacity: 0.1;
+}
+.two {
+  background-color: rgb(255 0 0 / 0.1)
+}

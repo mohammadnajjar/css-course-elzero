@@ -1,0 +1,15 @@
+/* 
+  ?  text-align:     https://developer.mozilla.org/en-US/docs/Web/CSS/text-align
+  ?  direction:      https://developer.mozilla.org/en-US/docs/Web/CSS/direction
+  ?  vertical-align: https://developer.mozilla.org/en-US/docs/Web/CSS/vertical-align
+*/
+
+
+div {
+  background-color: #f9f9f9;
+  text-align: center;
+  direction: ltr;
+}
+img {
+  vertical-align: middle;
+}

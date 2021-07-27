@@ -1,0 +1,101 @@
+.one {
+  background-color: red;
+  color: white;
+}
+.two {
+  background-color: #eee;
+  width: 100px;
+  height: 100px;
+}
+a {
+  color: green;
+  text-decoration: none;
+}
+a:hover {
+  color: red;
+}
+a:visited {
+  color: blue;
+}
+:empty {
+  border: 10px solid red;
+}
+.ch:checked {
+  display: none;
+}
+.in:focus {
+  border-color: red;
+  outline: none;
+}
+.standard-table,
+table {
+  border-collapse: collapse;
+  margin-bottom: 24px;
+}
+.properties code,
+.standard-table code,
+table code {
+  background-color: transparent;
+  -webkit-hyphens: auto;
+  -ms-hyphens: auto;
+  hyphens: auto;
+}
+.properties {
+  max-width: 45rem;
+  max-width: 85ch;
+  border: 2px solid #00458b;
+  border-left-width: 6px;
+}
+.properties td,
+.properties th {
+  background-color: #fafafa;
+  border: 0;
+  border-top: 2px solid #00458b;
+  display: block;
+  padding: 12px;
+  vertical-align: top;
+}
+@media (min-width: 63.9385em) {
+  .properties td,
+  .properties th {
+    display: table-cell;
+  }
+}
+@media (min-width: 63.9385em) {
+  .properties th {
+    min-width: 30%;
+  }
+}
+.standard-table {
+  width: 100%;
+}
+@media (min-width: 63.9385em) {
+  .standard-table {
+    border-left: 6px solid #276738;
+  }
+}
+.standard-table td,
+.standard-table th {
+  border: 0;
+  border-left: 2px solid #fff;
+  padding: 12px;
+}
+.standard-table td,
+.standard-table th {
+  background-color: #eee;
+  border-bottom: 2px solid #fff;
+}
+.standard-table tr td:first-child,
+.standard-table tr th:first-child {
+  border-left: 0;
+  min-width: 150px;
+}
+@media (min-width: 63.9385em) {
+  .standard-table tr td:first-child,
+  .standard-table tr th:first-child {
+    min-width: 200px;
+  }
+}
+.standard-table tr:last-child td {
+  border-bottom: 0;
+}

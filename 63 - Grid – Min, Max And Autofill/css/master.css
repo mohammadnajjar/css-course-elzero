@@ -1,0 +1,32 @@
+/* 
+  https://css-tricks.com/auto-sizing-columns-css-grid-auto-fill-vs-auto-fit/
+  https://www.bing.com/videos/search?q=grid+auto-fill&docid=608046388562902969&mid=A085BAFAB5210C49D237A085BAFAB5210C49D237&view=detail&FORM=VIRE
+  https://gridbyexample.com/video/series-auto-fill-auto-fit/
+  https://dev.to/nunocpnp/css-grid-auto-fit-auto-fill-4hkh
+  https://webdesign.tutsplus.com/tutorials/css-grid-layout-going-responsive--cms-27270
+  https://gridbyexample.com/examples/example37/
+  responsive deisgn without media q
+  https://www.youtube.com/watch?v=mmpYTW0Knmk
+  https://www.youtube.com/playlist?list=PLejc1JbD4ZFSfuOkahX_4M77jIkT-aRsK
+
+*/
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+.parent {
+  margin: 20px auto;
+  height: 500px;
+  background-color: #ddd;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+}
+.parent div {
+  background-color: red;
+  color: white;
+  padding: 20px;
+  font-size: 30px;
+  font-weight: bold;
+  text-align: center;
+}

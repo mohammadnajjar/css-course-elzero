@@ -1,0 +1,6 @@
+._test /* bad name */{
+  color: red;
+}
+.user-test { /* best name */
+  color: red;
+}

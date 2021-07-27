@@ -1,0 +1,12 @@
+/* 
+  ?  text-transform:  https://developer.mozilla.org/docs/Web/CSS/text-transform
+  ?  text-decoration: https://developer.mozilla.org/en-US/docs/Web/CSS/text-decoration
+*/
+
+div {
+  background-color: #f9f9f9;
+  text-transform: capitalize;
+}
+a{
+  text-decoration: none;
+}

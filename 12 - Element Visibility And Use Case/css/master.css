@@ -1,0 +1,16 @@
+/* 
+  !visibility hide element and save place in page
+  visibility: hidden;  
+  !display hide element delete place from page
+   display: none;
+*/
+
+
+div {
+  background-color: red;
+  margin: 10px 0;
+}
+.first {
+  /* display: none; */
+  visibility: hidden;
+}

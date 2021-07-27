@@ -1,0 +1,37 @@
+/*
+  solve float problem:
+    - It is recommended to clear the float after elements that float applied to in the same level see the attached code.
+    - clear : both => works fine in both directions
+     حل مشاكل فلوت
+
+  ! 1-height:
+      لازم حط طول للأب height
+      بس في هل حالة إذا كبرو العناصر أكبر من الأب بنرجع لنفس المكشلة 
+
+  ! 2-overflow:hidden
+      مشكلتو إذا كانو العناصر أكبر من الأب بحذف كل شي طالع لبرا
+
+  ! 3- clear : both
+      بضبط انو مايجي عنصر جنبه بس مابظبط حجم الأب لازم حطو جوا الأب
+  ?   احسن حل حط overflow و clear
+
+  */
+.parent {
+  /* height:100px; */
+  background-color: red;
+  padding: 10px;
+  overflow: hidden;
+}
+
+.parent div {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  text-align: center;
+  background-color: #eee;
+  width: 25%;
+  float: left;
+}
+
+.clear {
+  clear: both;
+}

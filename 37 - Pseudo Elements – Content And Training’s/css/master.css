@@ -1,0 +1,74 @@
+/* 
+  !content:  https://developer.mozilla.org/en-US/docs/Web/CSS/content
+  انشاء عداد :
+    بحط في الأب خاصية 
+    counter-increment: name-counter;
+    بعدا بروح على 
+    after  
+    content: counter(name-counter);
+    content  كمان
+    بتقبل بنحط فيا اتريبيوت من العنصر
+    <div class="one" data-text="Something">
+    content: attr(data-text);
+    بطبع القيمة الموجودة جوا data-text
+    مثال على تطبيقها لما بعمل هوفر على شغلة بطالعلي الشرح تبعا
+*/
+
+.parent {
+  margin-bottom: 20px;
+  overflow: hidden;
+  counter-increment: members-counter;
+}
+.one {
+  background-color: #eee;
+  padding: 10px;
+  width: 600px;
+  float: left;
+  position: relative;
+}
+.one::before {
+  content: attr(data-text);
+  color: #009688;
+  /* display: none; */
+}
+.one::after {
+  content: counter(members-counter);
+  position: absolute;
+  background-color: red;
+  color: white;
+  width: 20px;
+  height: 20px;
+  text-align: center;
+  font-weight: bold;
+  right: -10px;
+  top: 50%;
+  margin-top: -10px;
+}
+.user {
+  background-color: #eee;
+  width: 50px;
+  margin-right: 20px;
+  padding: 10px;
+  height: 55.5px;
+  float: left;
+  font-size: 50px;
+  text-align: center;
+}
+ul {
+  list-style: none;
+}
+ul li {
+  position: relative;
+}
+ul li::before {
+  content: "";
+  width: 0;
+  height: 0;
+  position: absolute;
+  left: -20px;
+  top: 50%;
+  margin-top: -10px;
+  border-width: 10px;
+  border-style: solid;
+  border-color: transparent #009688 transparent transparent;
+}
